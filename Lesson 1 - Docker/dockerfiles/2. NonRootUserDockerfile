@@ -1,0 +1,17 @@
+FROM node:18
+
+# Create user
+RUN useradd -m appuser
+
+WORKDIR /app
+COPY . .
+
+RUN npm install
+
+# Change ownership
+RUN chown -R appuser:appuser /app
+
+# Switch user
+USER appuser
+
+CMD ["node", "app.js"]
