@@ -9,6 +9,10 @@ This guide covers:
 - Multi-stage builds
 - Security practices (USER, ARG vs ENV)
 
+
+You can view the following video on docker to have a more easier and detailed understanding.
+[Watch Video](https://drive.google.com/file/d/15iFwU037-VRuXRkEEIgj7lkIXDCy89ys/view?usp=drive_link)
+
 ---
 
 # 📌 1. Why Docker Was Introduced
@@ -177,6 +181,9 @@ USER appuser
 4. Run uvicorn
 
 ---
+
+Before moving on to Docker commands, watch the video for a practical overview.
+[Watch Video](https://drive.google.com/file/d/12yh4WfUCMCk3v65g9665LXKOg2o8BWvW/view?usp=drive_link)
 
 # 🐳 6. Docker Commands
 
