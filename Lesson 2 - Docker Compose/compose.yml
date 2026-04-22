@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+
+  frontend:
+    image: react-app-image
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    image: node-backend-image
+    container_name: backend
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_URI=mongodb://db:27017/mydb
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    image: mongo
+    container_name: mongodb
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - app-network
+
+networks:
+  app-network:
+
+volumes:
+  mongo-data:
