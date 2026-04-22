@@ -1,5 +1,9 @@
 # Docker Compose — Complete Teaching Guide
 
+You can view the following video on docker to have a more easier and detailed understanding.
+[Watch Video](https://drive.google.com/file/d/1Gh84uhtQvA0AiuCoJAjq0JXY0C65wMDA/view?usp=drive_link)
+
+
 ## 1. What is Docker Compose?
 
 Docker Compose is a tool used to define and run multi-container Docker applications using a single YAML file.
